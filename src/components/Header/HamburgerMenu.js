@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 
 const Container = styled.button`
@@ -11,6 +11,10 @@ const Container = styled.button`
   cursor: pointer;
   padding: 0;
   z-index: 10;
+
+  &:focus {
+    outline: none;
+  }
 
   div {
     width: 2rem;
@@ -31,9 +35,7 @@ const Container = styled.button`
   }
 `;
 
-const HamburgerMenu = () => {
-  const [open, setOpen] = useState(false);
-
+const HamburgerMenu = ({ open, setOpen }) => {
   return (
     <Container open={open} onClick={() => setOpen((prevOpen) => !prevOpen)}>
       <div />

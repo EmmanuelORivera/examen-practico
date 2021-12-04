@@ -1,8 +1,17 @@
+import React from "react";
+import { ThemeProvider } from "styled-components";
+import Navbar from "./components/Navbar";
+import { GlobalStyles } from "./global";
+import { theme } from "./theme";
+
 const App = () => {
   return (
-    <div className="App">
-      <h1>hola mundo</h1>
-    </div>
+    <ThemeProvider theme={theme}>
+      <>
+        <GlobalStyles />
+        <Navbar />
+      </>
+    </ThemeProvider>
   );
 };
 

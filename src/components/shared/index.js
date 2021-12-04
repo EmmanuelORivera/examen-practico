@@ -8,6 +8,6 @@ export const CardWrapper = styled.div`
 `;
 
 export const MainWrapper = styled.div`
-  width: 90%;
+  width: 85%;
   margin: 0 auto;
 `;

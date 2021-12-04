@@ -7,10 +7,8 @@ import { theme } from "./theme";
 const App = () => {
   return (
     <ThemeProvider theme={theme}>
-      <>
-        <GlobalStyles />
-        <Header />
-      </>
+      <GlobalStyles />
+      <Header />
     </ThemeProvider>
   );
 };

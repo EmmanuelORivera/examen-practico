@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const CardWrapper = styled.div`
+  display: inline-block;
   border-radius: 8px;
   border: 1px solid ${({ theme }) => theme.colors.palette.gray["900"]};
   overflow: hidden;

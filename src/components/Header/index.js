@@ -4,7 +4,7 @@ import * as Styled from "./styles";
 import * as StyledShared from "../shared";
 import HamburgerMenu from "./HamburgerMenu";
 
-const Navbar = () => {
+const Header = () => {
   return (
     <Styled.Container>
       <StyledShared.MainWrapper>
@@ -19,4 +19,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Header;

@@ -1,6 +1,6 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 
@@ -9,7 +9,7 @@ const App = () => {
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyles />
-        <Navbar />
+        <Header />
       </>
     </ThemeProvider>
   );

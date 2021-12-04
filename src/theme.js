@@ -1,3 +1,6 @@
 export const theme = {
-  primaryBackgroundColor: "#F7F8FC",
+  colors: {
+    background: "#F7F8FC",
+    black: "#000",
+  },
 };

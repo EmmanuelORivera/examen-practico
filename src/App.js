@@ -11,10 +11,12 @@ const App = () => {
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
-      <Header />
-      <MainWrapper>
-        <Dashboard />
-      </MainWrapper>
+      <div style={{ minHeight: "100vh" }}>
+        <Header />
+        <MainWrapper>
+          <Dashboard />
+        </MainWrapper>
+      </div>
       <Footer />
     </ThemeProvider>
   );

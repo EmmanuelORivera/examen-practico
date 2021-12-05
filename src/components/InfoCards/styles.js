@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
+  align-items: center;
   background: ${({ theme }) => theme.colors.background};
   display: flex;
   flex-direction: column;

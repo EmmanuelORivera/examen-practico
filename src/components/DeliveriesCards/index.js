@@ -20,7 +20,7 @@ const deliveriesInformation = [
     status: { text: "Cancelado", code: "canceled" },
   },
   {
-    id: "3cdef0e2",
+    id: "711b324d",
     user: "Pablo Ochoa",
     date: "2 Dic 2021",
     driver: "Bill Doe",

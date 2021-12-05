@@ -14,6 +14,7 @@ export const CardStatusInfo = styled.div`
     if (status === "inProgress") return theme.colors.palette.blue["100"];
   }};
   padding: 1em;
+  min-width: 10em;
 `;
 export const CardInfo = styled.div`
   padding: 1em;

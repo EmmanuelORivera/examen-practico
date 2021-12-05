@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as Styled from "./styled";
-import { CardWrapper } from "../shared";
+import { CardWrapper, InfoSubtitle } from "../shared";
 
 const initialState = {
   deliveries: [
@@ -56,16 +56,16 @@ const DeliveriesCards = ({ setSelectedCard }) => {
             <Styled.DeliveryInfo>
               <Styled.DeliveryInfoChild>
                 <Styled.DeliveryID>ID: {item.id}</Styled.DeliveryID>
-                <Styled.DeliveryTitle>Usuario</Styled.DeliveryTitle>
+                <InfoSubtitle>Usuario</InfoSubtitle>
                 <Styled.DeliveryText>{item.user}</Styled.DeliveryText>
-                <Styled.DeliveryTitle>Repartidor</Styled.DeliveryTitle>
+                <InfoSubtitle>Repartidor</InfoSubtitle>
                 <Styled.DeliveryText>{item.driver}</Styled.DeliveryText>
               </Styled.DeliveryInfoChild>
               <Styled.DeliveryInfoChild>
                 <Styled.Date>{item.date}</Styled.Date>
-                <Styled.DeliveryTitle>Expedidor</Styled.DeliveryTitle>
+                <InfoSubtitle>Expedidor</InfoSubtitle>
                 <Styled.DeliveryText>{item.shipper}</Styled.DeliveryText>
-                <Styled.DeliveryTitle>Status</Styled.DeliveryTitle>
+                <InfoSubtitle>Status</InfoSubtitle>
                 <Styled.DeliveryStatus status={item.status["code"]}>
                   {item.status["text"]}
                 </Styled.DeliveryStatus>

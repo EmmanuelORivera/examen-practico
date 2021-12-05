@@ -1,13 +1,5 @@
 import styled from "styled-components";
 
-export const TemplateCard = styled.div`
-  min-width: 25.4em;
-  padding: 1em 0;
-  & p {
-    margin-bottom: 0.5em;
-  }
-`;
-
 export const CardsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;

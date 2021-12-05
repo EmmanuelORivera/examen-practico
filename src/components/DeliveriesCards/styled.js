@@ -1,17 +1,13 @@
 import styled from "styled-components";
+import { TemplateCard } from "../shared";
 
-export const Card = styled.div`
-  min-width: 25.4em;
-  padding: 1em 0;
+export const Card = styled(TemplateCard)`
   cursor: pointer;
   background: ${({ activeLink, theme }) =>
     activeLink === "active" && theme.colors.background};
 
   &:hover {
     background: ${({ theme }) => theme.colors.background};
-  }
-  & p {
-    margin-bottom: 0.5em;
   }
 `;
 
@@ -38,11 +34,6 @@ export const DeliveryInfoChild = styled.div`
   p:last-child {
     margin-bottom: 0;
   }
-`;
-export const DeliveryTitle = styled.p`
-  color: ${({ theme }) => theme.colors.palette.gray["900"]};
-  font-size: 0.875rem;
-  font-weight: 600;
 `;
 
 export const DeliveryText = styled.p`

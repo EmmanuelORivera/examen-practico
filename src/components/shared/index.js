@@ -1,5 +1,13 @@
 import styled from "styled-components";
 
+export const TemplateCard = styled.div`
+  min-width: 25.4em;
+  padding: 1em 0;
+  & p {
+    margin-bottom: 0.5em;
+  }
+`;
+
 export const CardWrapper = styled.div`
   display: inline-block;
   border-radius: 8px;
@@ -10,4 +18,10 @@ export const CardWrapper = styled.div`
 export const MainWrapper = styled.div`
   width: 85%;
   margin: 0 auto;
+`;
+
+export const InfoSubtitle = styled.p`
+  color: ${({ theme }) => theme.colors.palette.gray["900"]};
+  font-size: 0.875rem;
+  font-weight: 600;
 `;

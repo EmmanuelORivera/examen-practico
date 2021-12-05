@@ -5,6 +5,7 @@ import Dashboard from "./pages/Dashboard";
 import { GlobalStyles } from "./global";
 import { theme } from "./theme";
 import { MainWrapper } from "./components/shared";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <MainWrapper>
         <Dashboard />
       </MainWrapper>
+      <Footer />
     </ThemeProvider>
   );
 };

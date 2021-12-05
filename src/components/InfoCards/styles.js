@@ -4,10 +4,13 @@ export const Card = styled.div`
   align-items: center;
   background: ${({ theme }) => theme.colors.background};
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   gap: 1em;
-  min-width: 11.68em;
   padding: 1.125em;
+  @media (min-width: 475px) {
+    flex-direction: column;
+    min-width: 11.68em;
+  }
 `;
 
 export const CardTitle = styled.div`

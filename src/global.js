@@ -9,6 +9,10 @@ export const GlobalStyles = createGlobalStyle`
         font-family:"Montserrat",sans-serif;
         margin:0;
         padding:0;
+        
+    @media (min-width: 1000px) {
+      font-size:18px;
+    }
     }
     p{
         margin:0;

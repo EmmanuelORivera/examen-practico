@@ -1,10 +1,12 @@
 import styled from "styled-components";
 
 export const TemplateCard = styled.div`
-  min-width: 25.4em;
   padding: 1em 0;
   & p {
     margin-bottom: 0.5em;
+  }
+  @media (min-width: 1000px) {
+    min-width: 25.4em;
   }
 `;
 
@@ -13,6 +15,10 @@ export const CardWrapper = styled.div`
   border-radius: 8px;
   border: 1px solid ${({ theme }) => theme.colors.palette.gray["800"]};
   overflow: hidden;
+  flex-grow: 1;
+  @media (min-width: 1000px) {
+    flex-grow: initial;
+  }
 `;
 
 export const MainWrapper = styled.div`

@@ -10,6 +10,9 @@ export const Container = styled.nav`
   background: white;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   transform: ${({ open }) => (open ? "translateX(0%)" : "translateX(-100%)")};
+  @media (min-width: 470px) {
+    width: 40%;
+  }
 `;
 
 export const UnorderedList = styled.ul`

@@ -3,7 +3,6 @@ import * as Styled from "./styled";
 import { CardWrapper, DeliveryText, InfoSubtitle } from "../shared";
 
 const TrackingCard = ({ selectedCard }) => {
-  console.log(selectedCard);
   return (
     <CardWrapper>
       <Styled.Card>

@@ -4,7 +4,6 @@ export const CardsWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 1.31em;
-  justify-content: space-between;
 `;
 export const Container = styled.div`
   margin: 2.75em 0;

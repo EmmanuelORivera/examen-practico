@@ -4,6 +4,8 @@ export const Card = styled.div`
   min-width: 25.4em;
   padding: 1em 0;
   cursor: pointer;
+  background: ${({ activeLink, theme }) =>
+    activeLink === "active" && theme.colors.background};
 
   &:hover {
     background: ${({ theme }) => theme.colors.background};

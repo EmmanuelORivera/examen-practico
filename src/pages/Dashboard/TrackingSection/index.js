@@ -17,12 +17,18 @@ const renderTrackingMessage = () => {
   );
 };
 
+const renderTrackingCard = (selectedCard) => {
+  return <TrackingCard selectedCard={selectedCard} />;
+};
+
 const TrackingSection = ({ selectedCard }) => {
   return (
     <section>
       <SubTitle>Seguimiento</SubTitle>
 
-      {isEmptyObject(selectedCard) ? renderTrackingMessage() : <TrackingCard />}
+      {isEmptyObject(selectedCard)
+        ? renderTrackingMessage()
+        : renderTrackingCard(selectedCard)}
     </section>
   );
 };

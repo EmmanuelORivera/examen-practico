@@ -2,45 +2,54 @@ import React from "react";
 import * as Styled from "./styled";
 import { CardWrapper, DeliveryText, InfoSubtitle } from "../shared";
 
-const TrackingCard = () => {
+const TrackingCard = ({ selectedCard }) => {
+  console.log(selectedCard);
   return (
     <CardWrapper>
       <Styled.Card>
-        <Styled.CardStatusInfo status="delivered">
-          <Styled.InfoSubtitleColored status="delivered">
+        <Styled.CardStatusInfo status={selectedCard.status["code"]}>
+          <Styled.InfoSubtitleColored status={selectedCard.status["code"]}>
             Servicio ID
           </Styled.InfoSubtitleColored>
-          <DeliveryText>3cdef0e2</DeliveryText>
+          <DeliveryText>{selectedCard.id}</DeliveryText>
 
-          <Styled.InfoSubtitleColored status="delivered">
+          <Styled.InfoSubtitleColored status={selectedCard.status["code"]}>
             Usuario
           </Styled.InfoSubtitleColored>
-          <DeliveryText>Emmanuel Ochoa</DeliveryText>
+          <DeliveryText>{selectedCard.user}</DeliveryText>
 
-          <Styled.InfoSubtitleColored status="delivered">
+          <Styled.InfoSubtitleColored status={selectedCard.status["code"]}>
             Estimacion
           </Styled.InfoSubtitleColored>
-          <DeliveryText>3 horas</DeliveryText>
+          <DeliveryText>
+            {selectedCard.serviceInfo.estimatedArrival}
+          </DeliveryText>
 
-          <Styled.InfoSubtitleColored status="delivered">
+          <Styled.InfoSubtitleColored status={selectedCard.status["code"]}>
             Status
           </Styled.InfoSubtitleColored>
-          <DeliveryText>Entregado</DeliveryText>
+          <DeliveryText>{selectedCard.status["text"]}</DeliveryText>
         </Styled.CardStatusInfo>
         <Styled.CardInfo>
           <InfoSubtitle>Servicio Iniciado</InfoSubtitle>
           <DeliveryText>
-            2 Dic 2021 <Styled.HourText>10:14 AM</Styled.HourText>
+            {selectedCard.date}
+            <Styled.HourText>
+              {selectedCard.serviceInfo.serviceStartedHour}
+            </Styled.HourText>
           </DeliveryText>
 
           <InfoSubtitle>Servicio Finalizado</InfoSubtitle>
           <DeliveryText>
-            2 Dic 2021 <Styled.HourText>1:14 PM</Styled.HourText>
+            {selectedCard.date}
+            <Styled.HourText>
+              {selectedCard.serviceInfo.serviceFinishedHour}
+            </Styled.HourText>
           </DeliveryText>
 
           <InfoSubtitle>Observaciones</InfoSubtitle>
-          <DeliveryText style={{ maxWidth: "10.81em" }}>
-            El paqute ha sido entregado con exito
+          <DeliveryText style={{ maxWidth: "12.81em" }}>
+            {selectedCard.serviceInfo.observations}
           </DeliveryText>
         </Styled.CardInfo>
       </Styled.Card>

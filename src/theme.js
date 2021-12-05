@@ -3,8 +3,13 @@ export const theme = {
     background: "#F7F8FC",
     black: "#000",
     palette: {
+      blue: {
+        100: "#CAE2FF",
+        900: "#0076FF",
+      },
       gray: {
-        900: "#C8C8C8",
+        800: "#C8C8C8",
+        900: "#8A8A8A",
       },
       green: {
         100: "#C9EDE1",

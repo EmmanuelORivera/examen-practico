@@ -10,7 +10,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <>
-      {open && <Navigation open={open} />}
+      {open && <Navigation open={open} setOpen={setOpen} />}
       {open && <Backdrop setOpen={setOpen} />}
       <Styled.Container>
         <MainWrapper>

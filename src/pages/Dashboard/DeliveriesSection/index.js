@@ -1,17 +1,18 @@
 import React from "react";
-import DeliveriesCards from "../../components/DeliveriesCards";
+import DeliveriesCards from "../../../components/DeliveriesCards";
+import { CardsWrapper, SubTitle } from "../shared";
 import * as Styled from "./styles";
 
 const DeliveriesSection = () => {
   return (
     <section>
-      <Styled.SubTitle>Entregas</Styled.SubTitle>
+      <SubTitle>Entregas</SubTitle>
 
       <Styled.Input type="text" placeholder="Buscar entregas" />
 
-      <Styled.CardsWrapper>
+      <CardsWrapper>
         <DeliveriesCards />
-      </Styled.CardsWrapper>
+      </CardsWrapper>
     </section>
   );
 };

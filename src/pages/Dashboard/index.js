@@ -1,15 +1,17 @@
 import React from "react";
 import DeliveriesSection from "./DeliveriesSection";
 import InfoSection from "./InfoSection";
-import * as Styled from "./styles";
+import { Container, Title } from "./shared";
+import TrackingSection from "./TrackingSection";
 
 const Dashboard = () => {
   return (
-    <Styled.Container>
-      <Styled.Title>Dashboard</Styled.Title>
+    <Container>
+      <Title>Dashboard</Title>
       <InfoSection />
       <DeliveriesSection />
-    </Styled.Container>
+      <TrackingSection />
+    </Container>
   );
 };
 

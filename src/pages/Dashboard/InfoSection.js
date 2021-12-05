@@ -1,14 +1,14 @@
 import React from "react";
-import * as Styled from "./styles";
 import InfoCards from "../../components/InfoCards";
+import { CardsWrapper, SubTitle } from "./shared";
 const InfoSection = () => {
   return (
     <section>
-      <Styled.SubTitle>Información</Styled.SubTitle>
+      <SubTitle>Información</SubTitle>
 
-      <Styled.CardsWrapper>
+      <CardsWrapper>
         <InfoCards />
-      </Styled.CardsWrapper>
+      </CardsWrapper>
     </section>
   );
 };

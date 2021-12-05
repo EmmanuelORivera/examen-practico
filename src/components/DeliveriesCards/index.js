@@ -29,12 +29,12 @@ const deliveriesInformation = [
   },
 ];
 
-const DeliveriesCards = () => {
+const DeliveriesCards = ({ setSelectedCard }) => {
   return (
     <>
       {deliveriesInformation.map((item) => (
         <CardWrapper key={item.id}>
-          <Styled.Card>
+          <Styled.Card onClick={() => setSelectedCard(item)}>
             <Styled.DeliveryInfo>
               <Styled.DeliveryInfoChild>
                 <Styled.DeliveryID>ID: {item.id}</Styled.DeliveryID>

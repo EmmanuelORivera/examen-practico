@@ -1,6 +1,6 @@
 import React from "react";
-import InfoCards from "../../components/InfoCards";
-import { CardsWrapper, SubTitle } from "./shared";
+import InfoCards from "../../../components/InfoCards";
+import { CardsWrapper, SubTitle } from "../shared";
 const InfoSection = () => {
   return (
     <section>

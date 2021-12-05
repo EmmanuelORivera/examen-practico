@@ -3,7 +3,7 @@ import DeliveriesCards from "../../../components/DeliveriesCards";
 import { CardsWrapper, SubTitle } from "../shared";
 import * as Styled from "./styles";
 
-const DeliveriesSection = () => {
+const DeliveriesSection = ({ setSelectedCard }) => {
   return (
     <section>
       <SubTitle>Entregas</SubTitle>
@@ -11,7 +11,7 @@ const DeliveriesSection = () => {
       <Styled.Input type="text" placeholder="Buscar entregas" />
 
       <CardsWrapper>
-        <DeliveriesCards />
+        <DeliveriesCards setSelectedCard={setSelectedCard} />
       </CardsWrapper>
     </section>
   );

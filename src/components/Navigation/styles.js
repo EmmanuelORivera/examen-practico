@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const Container = styled.nav`
   position: fixed;
@@ -32,7 +33,7 @@ export const ListItem = styled.li`
   padding: 2rem 0;
 `;
 
-export const Link = styled.a`
+export const NewLink = styled(Link)`
   font-size: 1.2rem;
   font-weight: 600;
   color: black;

@@ -21,8 +21,20 @@ export const UnorderedList = styled.ul`
   list-style: none;
   height: 100%;
   justify-content: center;
+  align-items: center;
+  padding: 0;
 `;
 
 export const ListItem = styled.li`
+  display: flex;
+  align-items: center;
+  gap: 0.2em;
   padding: 2rem 0;
+`;
+
+export const Link = styled.a`
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
 `;

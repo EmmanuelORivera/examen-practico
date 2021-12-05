@@ -7,7 +7,7 @@ export const Container = styled.header`
 `;
 
 export const LogoContainer = styled.div`
-  width: 5em;
+  width: 6em;
 `;
 
 export const Wrapper = styled.div`

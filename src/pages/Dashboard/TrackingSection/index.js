@@ -3,8 +3,7 @@ import { ReactComponent as List } from "../../../img/List.svg";
 import { SubTitle } from "../shared";
 import * as Styled from "./styles";
 
-const isEmptyObject = (selectedCard) =>
-  Object.entries(selectedCard).length === 0;
+const isEmptyObject = (object) => Object.entries(object).length === 0;
 
 const renderTrackingMessage = () => {
   return (

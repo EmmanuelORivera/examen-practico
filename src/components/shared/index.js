@@ -20,6 +20,10 @@ export const MainWrapper = styled.div`
   margin: 0 auto;
 `;
 
+export const DeliveryText = styled.p`
+  font-size: 0.875rem;
+`;
+
 export const InfoSubtitle = styled.p`
   color: ${({ theme }) => theme.colors.palette.gray["900"]};
   font-size: 0.875rem;

@@ -1,38 +1,48 @@
 import React from "react";
 import * as Styled from "./styled";
-import { CardWrapper } from "../shared";
+import { CardWrapper, DeliveryText, InfoSubtitle } from "../shared";
 
 const TrackingCard = () => {
   return (
     <CardWrapper>
       <Styled.Card>
-        <div>
-          <p>Servicio ID</p>
-          <p>3cdef0e2</p>
+        <Styled.CardStatusInfo status="delivered">
+          <Styled.InfoSubtitleColored status="delivered">
+            Servicio ID
+          </Styled.InfoSubtitleColored>
+          <DeliveryText>3cdef0e2</DeliveryText>
 
-          <p>Usuario</p>
-          <p>Emmanuel Ochoa</p>
+          <Styled.InfoSubtitleColored status="delivered">
+            Usuario
+          </Styled.InfoSubtitleColored>
+          <DeliveryText>Emmanuel Ochoa</DeliveryText>
 
-          <p>Estimacion</p>
-          <p>3 horas</p>
+          <Styled.InfoSubtitleColored status="delivered">
+            Estimacion
+          </Styled.InfoSubtitleColored>
+          <DeliveryText>3 horas</DeliveryText>
 
-          <p>Status</p>
-          <p>Entregado</p>
-        </div>
-        <div>
-          <p>Servicio Iniciado</p>
-          <p>
-            2 Dic 2021 <span>10:14 AM</span>
-          </p>
+          <Styled.InfoSubtitleColored status="delivered">
+            Status
+          </Styled.InfoSubtitleColored>
+          <DeliveryText>Entregado</DeliveryText>
+        </Styled.CardStatusInfo>
+        <Styled.CardInfo>
+          <InfoSubtitle>Servicio Iniciado</InfoSubtitle>
+          <DeliveryText>
+            2 Dic 2021 <Styled.HourText>10:14 AM</Styled.HourText>
+          </DeliveryText>
 
-          <p>Servicio Finalizado</p>
-          <p>
-            2 Dic 2021 <span>1:14 PM</span>
-          </p>
+          <InfoSubtitle>Servicio Finalizado</InfoSubtitle>
+          <DeliveryText>
+            2 Dic 2021 <Styled.HourText>1:14 PM</Styled.HourText>
+          </DeliveryText>
 
-          <p>Observaciones</p>
-          <p>El paqute ha sido entregado con exito</p>
-        </div>
+          <InfoSubtitle>Observaciones</InfoSubtitle>
+          <DeliveryText style={{ maxWidth: "10.81em" }}>
+            El paqute ha sido entregado con exito
+          </DeliveryText>
+        </Styled.CardInfo>
       </Styled.Card>
     </CardWrapper>
   );

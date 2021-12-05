@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { TemplateCard } from "../shared";
+import { DeliveryText, TemplateCard } from "../shared";
 
 export const Card = styled(TemplateCard)`
   cursor: pointer;
@@ -36,9 +36,6 @@ export const DeliveryInfoChild = styled.div`
   }
 `;
 
-export const DeliveryText = styled.p`
-  font-size: 0.875rem;
-`;
 export const DeliveryStatus = styled(DeliveryText)`
   color: ${({ status, theme }) => {
     if (status === "delivered") return theme.colors.palette.green["900"];

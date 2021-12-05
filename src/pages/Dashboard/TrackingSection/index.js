@@ -1,4 +1,5 @@
 import React from "react";
+import TrackingCard from "../../../components/TrackingCard";
 import { ReactComponent as List } from "../../../img/List.svg";
 import { SubTitle } from "../shared";
 import * as Styled from "./styles";
@@ -16,18 +17,12 @@ const renderTrackingMessage = () => {
   );
 };
 
-const renderTrackingCard = () => {
-  return <h1>Some dummy text</h1>;
-};
-
 const TrackingSection = ({ selectedCard }) => {
   return (
     <section>
       <SubTitle>Seguimiento</SubTitle>
 
-      {isEmptyObject(selectedCard)
-        ? renderTrackingMessage()
-        : renderTrackingCard()}
+      {isEmptyObject(selectedCard) ? renderTrackingMessage() : <TrackingCard />}
     </section>
   );
 };

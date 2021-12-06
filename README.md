@@ -1,5 +1,8 @@
 # Aplicacion creada con Create React App
 
+## Ver este proyecto en netlify
+[https://dashboard95.netlify.app/](https://dashboard95.netlify.app/)
+
 ## Instalar dependencias
 
 ### `yarn`
